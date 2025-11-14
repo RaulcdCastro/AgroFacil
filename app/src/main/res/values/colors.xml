@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
     <color name="agro_primary">#2E7D32</color> <!-- verde forte -->
     <color name="agro_primary_light">#A5D6A7</color>
@@ -7,3 +8,10 @@
     <color name="agro_text_dark">#2C2C2C</color>
     <color name="agro_text_light">#6E6E6E</color>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1

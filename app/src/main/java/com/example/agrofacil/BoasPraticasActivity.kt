@@ -18,6 +18,7 @@ class BoasPraticasActivity : AppCompatActivity() {
 
         rvTips = findViewById(R.id.rvTips)
 
+<<<<<<< HEAD
         // Botão de voltar
         val btnBack = findViewById<Button>(R.id.btnBackTips)
         btnBack.setOnClickListener {
@@ -25,6 +26,14 @@ class BoasPraticasActivity : AppCompatActivity() {
         }
 
         // Lista fixa de dicas
+=======
+        // Botão voltar
+        val btnBack = findViewById<Button>(R.id.btnBack)
+        btnBack.setOnClickListener {
+            finish() // Fecha esta tela e volta para a MainActivity
+        }
+
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
         val tips = listOf(
             Tip(
                 title = "Regue nos horários mais frescos",

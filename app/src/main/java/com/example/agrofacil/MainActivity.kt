@@ -1,9 +1,16 @@
 package com.example.agrofacil
+<<<<<<< HEAD
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+=======
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,15 +20,26 @@ import com.example.agrofacil.ui.CultureAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
     private lateinit var rvCultures: RecyclerView
     private lateinit var fabAddCulture: FloatingActionButton
     private lateinit var btnTips: Button
     private lateinit var btnCalendar: Button
+<<<<<<< HEAD
     private lateinit var tvEmptyState: TextView
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
 
     val cultures = mutableListOf<Culture>()
     private lateinit var adapter: CultureAdapter
 
+<<<<<<< HEAD
+=======
+    // cadastro de cultura
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
     private val addCultureLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -48,11 +66,18 @@ class MainActivity : AppCompatActivity() {
 
             cultures.add(newCulture)
             adapter.notifyItemInserted(cultures.size - 1)
+<<<<<<< HEAD
             updateEmptyState()
         }
     }
 
 
+=======
+        }
+    }
+
+    // registro de produção
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
     private val registerHarvestLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -80,7 +105,10 @@ class MainActivity : AppCompatActivity() {
         fabAddCulture = findViewById(R.id.fabAddCulture)
         btnTips = findViewById(R.id.btnTips)
         btnCalendar = findViewById(R.id.btnCalendar)
+<<<<<<< HEAD
         tvEmptyState = findViewById(R.id.tvEmptyState)
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
 
         adapter = CultureAdapter(cultures) { culture ->
             val intent = Intent(this, RegisterHarvestActivity::class.java).apply {
@@ -93,7 +121,10 @@ class MainActivity : AppCompatActivity() {
         rvCultures.layoutManager = LinearLayoutManager(this)
         rvCultures.adapter = adapter
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
         fabAddCulture.setOnClickListener {
             val intent = Intent(this, AddCultureActivity::class.java)
             addCultureLauncher.launch(intent)
@@ -104,6 +135,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+<<<<<<< HEAD
 
         btnCalendar.setOnClickListener {
             val intent = Intent(this, CalendarioActivity::class.java).apply {
@@ -118,5 +150,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateEmptyState() {
         tvEmptyState.visibility = if (cultures.isEmpty()) View.VISIBLE else View.GONE
+=======
+        btnCalendar.setOnClickListener {
+            val intent = Intent(this, CalendarioActivity::class.java).apply {
+                putExtra("cultures", ArrayList(cultures)) // manda a lista atual
+            }
+            startActivity(intent)
+        }
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
     }
 }

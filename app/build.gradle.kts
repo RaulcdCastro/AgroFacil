@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import com.google.gms.googleservices.FirebaseClientData
 
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
+=======
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
 }
 
 android {
@@ -35,9 +41,13 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+<<<<<<< HEAD
 
     }
 
+=======
+    }
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
 }
 
 dependencies {
@@ -50,6 +60,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+<<<<<<< HEAD
     implementation(platform("com.google.firebase:firebase-bom:34.5.0"))
 
 }
+=======
+}
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1

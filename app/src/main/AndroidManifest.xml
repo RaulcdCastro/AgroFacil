@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgroFacil">
 
+<<<<<<< HEAD
 
         <activity
             android:name=".LoginActivity"
@@ -27,11 +28,30 @@
 
         <activity android:name=".MainActivity" />
 
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
         <activity android:name=".AddCultureActivity" />
         <activity android:name=".BoasPraticasActivity" />
         <activity android:name=".RegisterHarvestActivity" />
         <activity android:name=".CalendarioActivity" />
 
+<<<<<<< HEAD
     </application>
 
 </manifest>
+=======
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1

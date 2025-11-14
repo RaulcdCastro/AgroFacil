@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,6 +15,19 @@
     <LinearLayout
         android:orientation="vertical"
         android:padding="14dp"
+=======
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -22,7 +36,10 @@
             android:text="Nome da cultura"
             android:textSize="18sp"
             android:textStyle="bold"
+<<<<<<< HEAD
             android:textColor="@color/agro_text_dark"
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -30,29 +47,48 @@
             android:id="@+id/tvCultureType"
             android:text="Tipo • Área"
             android:textSize="14sp"
+<<<<<<< HEAD
             android:textColor="@color/agro_text_light"
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
             android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/tvCultureDates"
+<<<<<<< HEAD
             android:text="Plantio: XX/XX/XXXX • Colheita: XX/XX/XXXX"
             android:textSize="13sp"
             android:textColor="@color/agro_text_light"
+=======
+            android:text="Plantio: XXX • Colheita: YYY"
+            android:textSize="13sp"
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+<<<<<<< HEAD
+=======
+        <!-- NOVO: linha de produção -->
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
         <TextView
             android:id="@+id/tvProduction"
             android:text="Produção: 0 kg"
             android:textSize="13sp"
+<<<<<<< HEAD
             android:textColor="@color/agro_text_light"
+=======
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
 
+<<<<<<< HEAD
 </com.google.android.material.card.MaterialCardView>
+=======
+</androidx.cardview.widget.CardView>
+>>>>>>> ea07f2377a24253d5a0c47a5b33106bb771f23e1
