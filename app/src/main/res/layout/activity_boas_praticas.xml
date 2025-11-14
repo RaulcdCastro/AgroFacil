@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/agro_background">
+
+    <Button
+        android:id="@+id/btnBackTips"
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="8dp"
+        android:backgroundTint="@color/agro_primary"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvTitleTips"
+        android:text="Boas práticas agrícolas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/agro_text_dark"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Dicas simples para manejo sustentável da lavoura."
+        android:textSize="14sp"
+        android:textColor="@color/agro_text_light"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTips"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

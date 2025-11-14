@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/agro_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- LOGO GRANDE DE FUNDO -->
+        <TextView
+            android:text="AGROFÁCIL"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:alpha="0.15"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/agro_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Título -->
+        <TextView
+            android:text="Entrar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/agro_text_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/agro_input"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- SENHA -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/agro_input"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- BOTÃO LOGIN -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:layout_marginTop="22dp"
+            android:background="@color/agro_primary"
+            android:textColor="@android:color/white"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- IR PARA CADASTRO -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:text="Criar conta"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/agro_primary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

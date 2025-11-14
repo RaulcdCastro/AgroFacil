@@ -1,0 +1,9 @@
+<resources>
+    <color name="agro_primary">#2E7D32</color> <!-- verde forte -->
+    <color name="agro_primary_light">#A5D6A7</color>
+    <color name="agro_secondary">#F9D27D</color> <!-- amarelo trigo -->
+    <color name="agro_background">#F3F8F3</color> <!-- verde claríssimo -->
+    <color name="agro_card">#FFFFFF</color>
+    <color name="agro_text_dark">#2C2C2C</color>
+    <color name="agro_text_light">#6E6E6E</color>
+</resources>

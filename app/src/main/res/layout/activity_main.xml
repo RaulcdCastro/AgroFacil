@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/agro_background">
+
+    <!-- Marca d’água AGROFÁCIL, menor e bem no rodapé -->
+    <TextView
+        android:id="@+id/tvBrandBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGROFÁCIL"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/agro_primary"
+        android:alpha="0.10"
+        android:shadowColor="#55000000"
+        android:shadowDx="0"
+        android:shadowDy="6"
+        android:shadowRadius="18" />
+
+    <!-- Conteúdo principal (título, botões, lista) -->
+    <LinearLayout
+        android:id="@+id/containerContent"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Minhas culturas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/agro_text_dark"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:text="Acompanhe suas lavouras, produção e calendário em um só lugar."
+            android:textSize="13sp"
+            android:textColor="@color/agro_text_light"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Linha de botões: agora não ficam cortados -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalendar"
+                android:text="CALENDÁRIO"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:insetTop="8dp"
+                android:insetBottom="8dp"
+                android:paddingHorizontal="16dp"
+                app:cornerRadius="50dp"
+                app:backgroundTint="@color/agro_primary"
+                android:textColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTips"
+                android:text="BOAS PRÁTICAS"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:insetTop="8dp"
+                android:insetBottom="8dp"
+                android:paddingHorizontal="16dp"
+                app:cornerRadius="50dp"
+                app:backgroundTint="@color/agro_primary"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Mensagem quando não há culturas -->
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:text="Nenhuma cultura cadastrada ainda.\nToque no botão + para adicionar sua primeira lavoura."
+            android:textSize="14sp"
+            android:textColor="@color/agro_text_light"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- Lista de culturas ocupa o resto da tela -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCultures"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Botão flutuante de adicionar cultura -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/agro_primary"
+        app:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</FrameLayout>

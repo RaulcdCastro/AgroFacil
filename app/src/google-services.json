@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624131138424",
+    "project_id": "agro-facil-78e33",
+    "storage_bucket": "agro-facil-78e33.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624131138424:android:8a6b8bb43eea743cc01e8d",
+        "android_client_info": {
+          "package_name": "com.example.agrofacil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGkUyO4oMKcADIr2KOHRP5Q06HRbcL0A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
